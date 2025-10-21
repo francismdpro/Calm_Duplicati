@@ -1,6 +1,6 @@
-📁 Duplicati Low Priority Setter
+### 📁 Duplicati Low Priority Setter
 
-Description du Script
+#Description du Script
 
 Ce script PowerShell a pour but d'optimiser l'utilisation des ressources système (CPU) par l'application de sauvegarde Duplicati sous Windows.
 
@@ -8,7 +8,7 @@ Ce script PowerShell a pour but d'optimiser l'utilisation des ressources systèm
 
 Ceci permet aux tâches critiques du système et aux applications interactives de conserver une priorité élevée, assurant ainsi que les opérations de Duplicati n'impactent pas la fluidité générale du système.
 
-🛠️ Fonctionnalités
+#🛠️ Fonctionnalités
 
 Recherche par Nom Partiel : Utilise un filtrage avancé pour trouver tous les processus liés à Duplicati, même si le nom complet varie (ex : Duplicati.GUI.TrayIcon, Duplicati.Service, etc.).
 
@@ -18,7 +18,7 @@ Priorité Faible Définie : La priorité est fixée à Idle (la plus basse).
 
 Pause à la Fin : Le script marque une pause à la fin pour permettre à l'utilisateur de lire le journal d'exécution et de vérifier le succès de l'opération.
 
-🚀 Utilisation
+#🚀 Utilisation
 
 1. Sauvegarde du Fichier
 
@@ -34,7 +34,6 @@ Exécutez le script en double-cliquant dessus ou en l'appelant depuis une consol
 
 .\duplicalow.ps1
 
-
 Note : L'exécution du script déclenchera une fenêtre UAC (Contrôle de Compte Utilisateur) demandant l'autorisation d'administrateur.
 
 💻 Code Clé
@@ -48,8 +47,5 @@ $Processes = Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.Proce
 $Process.PriorityClass = [System.Diagnostics.ProcessPriorityClass]::Idle
 
 
-Licence
-
-Ce script est distribué sous licence MIT (ou toute autre licence de votre choix, par exemple, Domaine Public).
 
 <img width="1219" height="832" alt="image" src="https://github.com/user-attachments/assets/771a578a-4f2c-4285-b646-d5652fed8e60" />
