@@ -2,10 +2,7 @@
 
 #Description du Script
 
-Ce script PowerShell a pour but d'optimiser l'utilisation des ressources système (CPU) par l'application de sauvegarde Duplicati sous Windows.
-
-Étant donné que Duplicati peut consommer beaucoup de cycles CPU pendant les sauvegardes, ce script recherche tous les processus actifs dont le nom contient "duplicati" et définit leur classe de priorité sur Faible (Idle).
-
+Duplicati utilise beaucoup de ressources et personellement je lui ai mis une priorité de 9/10 (dans sa config). Ce script permet de changer la priorité au niveau windows pour le passer en basse priorité au cas où vous auriez besoin de votre ordinateur :)
 Ceci permet aux tâches critiques du système et aux applications interactives de conserver une priorité élevée, assurant ainsi que les opérations de Duplicati n'impactent pas la fluidité générale du système.
 
 #🛠️ Fonctionnalités
